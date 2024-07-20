@@ -1,8 +1,10 @@
 import './App.css'
 import Profile from './Profile/Profile.jsx'
-import userData from "./userData.json"
+import userData from "../userData.json"
 import FriendList from './FriendList/FriendList.jsx'
-import friendsList from "./friendsList.json"
+import friendsList from "../friendsList.json"
+import TransactionHistory from './TransactionHistory/TransactionHistory.jsx'
+import transactions from "../transactions.json"
 
 
 function App() {
@@ -17,7 +19,7 @@ function App() {
       />
 
       <FriendList friends = {friendsList} />
-      
+      <TransactionHistory items={transactions} />
     </>
     
   )
